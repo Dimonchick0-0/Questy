@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/welcomFragment">
+
+    <fragment
+        android:id="@+id/welcomFragment"
+        android:name="com.example.questy.presentation.fragment.WelcomFragment"
+        android:label="WelcomFragment" >
+        <action
+            android:id="@+id/action_welcomFragment_to_chooseQuestFragment"
+            app:destination="@id/chooseQuestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseQuestFragment"
+        android:name="com.example.questy.presentation.fragment.ChooseQuestFragment"
+        android:label="fragment_choose_quest"
+        tools:layout="@layout/fragment_choose_quest" >
+        <action
+            android:id="@+id/action_chooseQuestFragment_to_bookingAQuestFragment"
+            app:destination="@id/bookingAQuestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingAQuestFragment"
+        android:name="com.example.questy.presentation.fragment.BookingAQuestFragment"
+        android:label="fragment_booking_a_quest"
+        tools:layout="@layout/fragment_booking_a_quest" >
+        <argument
+            android:name="questItem"
+            app:argType="com.example.questy.domain.model.Quest" />
+        <action
+            android:id="@+id/action_bookingAQuestFragment_to_chooseQuestFragment"
+            app:destination="@id/chooseQuestFragment" />
+        <action
+            android:id="@+id/action_bookingAQuestFragment_to_userBookingQuestFragment"
+            app:destination="@id/userBookingQuestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userBookingQuestFragment"
+        android:name="com.example.questy.presentation.fragment.UserBookingQuestFragment"
+        android:label="UserBookingQuestFragment" >
+        <argument
+            android:name="userBookQuest"
+            app:argType="com.example.questy.domain.model.User" />
+        <action
+            android:id="@+id/action_userBookingQuestFragment_to_chooseQuestFragment"
+            app:destination="@id/chooseQuestFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Questy</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="weclom">Добро пожаловать, дорогие игроки!</string>
+    <string name="Do_you_believe_in_ghosts">Вы боитесь призраков?</string>
+    <string name="Are_you_afraid_of_the_dark">Вы боитесь темноты?</string>
+    <string name="finish">После наших квестов вы обязательно будете бояться всего и всех :)</string>
+    <string name="btn_letsgo_choose">Пойдём выбирать квест</string>
+
+    // Фрагмент выбора квеста
+    <string name="our_quests">Наши квесты</string>
+    <string name="name_hint">Ваше имя:</string>
+    <string name="data_hint">Дата бронирования:</string>
+    <string name="count_hint">Номер телефона:</string>
+    <string name="quest_name">Название квеста:</string>
+    <string name="save_btn">Забронировать</string>
+
+    <string name="error_input_count">Вы не ввели телефон</string>
+    <string name="error_input_name">Вы не ввели имя</string>
+    <string name="error_input_date">Вы не ввели дату</string>
+    <string name="error_input_quest_title">Вы не ввели название квеста</string>
+    <string name="finishBookingQuest">Готово! Квест забронирован!
+        Можете вернуться к списку квестов.</string>
+</resources>
